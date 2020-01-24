@@ -1,25 +1,24 @@
 <!DOCTYPE html>
   <head>
     <title>Mana lapa</title>
-    <link rel="Stylesheet"href="{{url_for('static', filename="css/main.css") }}"
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
   </head>
   <body>
     <header>
-      <div>
+      <div class="container">
         <nav>
-          <ul>
-            <li><a href="/home">home</a></li>
-            <li><a href="/about">about</a></li>
-            <li><a href="/contact">contact</a></li>
+          <ul class="menu">
+            <li><a href='/home'>Home</a></li>
+            <li><a href='/about'>About</a></li>
+            <li><a href='/contact'>Contact</a></li>
           </ul>
         </nav>
-      </div>      
+      </div>
     </header>
-    </div class ="container">
-    {% block saturs %}
+    <div class="container">
+      {% block saturs %}
 
-    {% endblock %}
+      {% endblock %}
     </div>
   </body>
-
-</html>  
+</html>
